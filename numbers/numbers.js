@@ -1,17 +1,14 @@
-// JavaScript only has one type of numbers
-// Numbers can be written with or without decimals - for example...
+//  JavaScript only has one type of numbers
+//  Numbers can be written with or without decimals - for example...
 
-var num = 32;
-var decNum = 32.5;
+var num = 32; // Integers are numbers - integers are very precise (up to 15 digits)
+var decNum = 32.5; // Decimals are numbers - not always accurate (max num of decimal places is 17)
 
-// To check the data type of what we are working with, we can use the typeof operator to see exactly what we're looking at for example it will return any variable, object, function, or expression - for example...
+//  Numbers do not have quotes around them!
+//  Number do follow standard rules of operations
+//  You can perform operations on numbers, like this...
 
-console.log(typeof decNum);
-console.log(typeof NaN);
-console.log(typeof [1, 2, "a", "b", 3 + 4]);
-console.log(typeof function() {});
-console.log(typeof "ten");
-console.log(typeof dec);
-console.log(typeof { 1: "hi", 2: "there" });
-console.log(typeof null);
-console.log(typeof false);
+console.log(10 + 5); // 15
+console.log((8 * (96 - 2)) / 2); // 376
+
+//  Write your own number variables - do some fancy math while your at it! be sure to console log the statements
