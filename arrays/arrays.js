@@ -68,3 +68,5 @@ for (var index = 0; index < arrLen; index++) {
 // 7. Jump back into The Loop - index = 3 => 3 < 4 (true) => console log the element => index++
 // 8. Jump back into The Loop - index = 4 => 4 < 4 (true) => console log the element => index++
 // 9. Jump back into The Loop - index = 5 => 5 < 4 (false) => break free of loop and end work
+
+// Let's practice!!!

@@ -35,3 +35,11 @@ console.log("~~~~~~~~~");
 //  Okay good, we got the answer we are truly seeking - false.
 //  It is very important to always* use '===' when checking the equality of two values
 //  Imagine if this program was written for a bank and '==' was used instead of '==='
+// The laws a equality in javaScript are
+// one '=' sign sets values equal to one another
+// two '==' signs give you truthy
+// three '===' signs means absolutely equal to
+
+// We can also use the '!' sign to create true and false statements for example...
+
+console.log(isThisTrue(12, 10));
