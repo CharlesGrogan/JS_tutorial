@@ -35,3 +35,15 @@ var person = {
 
 // We can also access information in an object like this...
 console.log("The last name of the person is " + person["lastName"]);
+
+// Methods are stored in properties as function definitions
+var person = {
+  firstName: "Charlie",
+  lastName: "Marshall",
+  age: 25,
+  eyeColor: "Green eyes",
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+console.log(this.fullName);
