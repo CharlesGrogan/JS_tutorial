@@ -44,6 +44,18 @@ var person = {
   eyeColor: "Green eyes",
   fullName: function() {
     return this.firstName + " " + this.lastName;
+  },
+  code: function() {
+    return "You are the coding king!";
   }
 };
-console.log(this.fullName);
+
+// To call the function we can write it like this...
+console.log(person.fullName()); // Charlie Marshall
+console.log(person.code());
+
+// We can also use the properities and the mthods together to give ourselves a little more complexity...
+var sentence = `Oh my, did you see ${person.firstName} and his ${
+  person.eyeColor
+}? I just wan to say to him...${person.code()}`;
+console.log(sentence);
