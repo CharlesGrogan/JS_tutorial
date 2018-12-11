@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pop Method Explained</title>
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        When working with arrays, it is easy to insert and remove items from
+        them, this is what is known as pushing and popping, in this lesson we
+        are going to look at the pop() method more specifically. Let's take a
+        look below and see what what's going down...
+      </p>
+      <p>
+        The pop() method literally removes and returns the last element from an
+        array, meaning that this method will mutate the original array, check it
+        out...
+      </p>
+      <p>
+        The original array looks like this...<strong>
+          const favBands = [ "Metalllica", "Red Hot Chili Peppers", "Rolling
+          Stones" ];</strong
+        >
+      </p>
+      <div class="row">
+        <p style="font-weight: bold;">
+          Output of using pop() on favBand array...
+        </p>
+        <div id="demo" class="col"></div>
+
+        <p style="font-weight: bold;">
+          Output of favBand array after we use the pop() method...
+        </p>
+        <div id="demo1"></div>
+      </div>
+    </div>
+
+    <script>
+      // In order to pop we first must have an array
+      const favBands = [
+        "Metalllica",
+        "Red Hot Chili Peppers",
+        "Rolling Stones"
+      ];
+      // To removes and returns the last element of an array we use the pop() method like so...
+      document.getElementById("demo").innerHTML = favBands.pop();
+
+      document.getElementById("demo1").innerHTML = favBands;
+      console.log(favBands);
+
+      // We can also do fun things like assign the 'popped' element from the array a variable and then reuse it any way we would like...let's take a look at some examples
+
+      let newArr = [1, 2, 3, 4, 5, 6];
+      let lastEle = newArr.pop();
+      console.log(lastEle); // return 6
+      newArr[0] = lastEle; // replace first element of newArr with lastEle
+      console.log(newArr); // return [6,2,3,4,5]
+    </script>
+  </body>
+</html>

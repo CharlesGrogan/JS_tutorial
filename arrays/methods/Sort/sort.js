@@ -21,4 +21,40 @@ console.log(newArr.sort()); // return [ 10, 11, 12, 15, 18, 19, 20 ]
 
 // Our output is what we would expect it to be^^^
 // If we want to ensure that we get the sort method to function the way we would like with single digit numbers we must add
-// params to the arguments, like so..
+// a compare function, like so..
+newArr.sort(function(a, b) {
+  return a - b;
+});
+
+console.log("~~~~~~~~~");
+console.log(newArr);
+console.log("~~~~~~~~~");
+
+// We can also take this principal and have the array return in ascending order...
+
+newArr.sort(function(a, b) {
+  return b - a;
+});
+
+console.log("ascending order like so..." + newArr);
+
+// The purpose of compare function is to define an alternative sort order
+// The compare function should return a negative, zero, or positive value depending on args
+// You can use this code snippet to experiment with numerically and alphabetically sorting:
+
+const points = [10, 100, 1, 5, 25, 95];
+
+function alphaSort() {
+  console.log(points.sort());
+}
+
+function numSort() {
+  console.log(
+    points.sort(function(a, b) {
+      return a - b;
+    })
+  );
+}
+
+alphaSort();
+numSort();

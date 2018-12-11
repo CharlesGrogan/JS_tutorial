@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Join method</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div>
+          <p>The join method also joins all array elements into a string</p>
+          <p>
+            It behaves just like toString() method, nut in addition you can
+            specify the sperators with values like ('*', ',', ';','~' etc etc)
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong
+              >The javaScript output using the ('~') as a seperator looks like
+              this:</strong
+            >
+            <div id="demo" class="col-md-12"></div>
+          </p>
+        </div>
+        <div style="font-weight: bold;">
+          Another look at how we can join arrays with special characters and
+          even letters (' g ')....
+        </div>
+        <div id="demo2"></div>
+
+        <div style="font-weight: bold;">
+          <p>
+            The join method can also have an empty argument() which would then
+            produce this outcome...
+          </p>
+        </div>
+        <div id="demo3"></div>
+      </div>
+    </div>
+
+    <script>
+      const cars = ["lexus", "toyota", "nissan"];
+      document.getElementById("demo").innerHTML = cars.join(" ~ ");
+
+      const beer = ["IPA", " Wheat", "Dubel Boch"];
+      document.getElementById("demo2").innerHTML = beer.join(" g ");
+
+      const locations = ["Cali", "Los Angeles", "The Hills"];
+      document.getElementById("demo3").innerHTML = locations.join();
+    </script>
+  </body>
+</html>

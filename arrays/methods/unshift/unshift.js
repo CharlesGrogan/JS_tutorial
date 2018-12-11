@@ -1,0 +1,13 @@
+// Create an array....
+const fruit = ["banana", "apple", "lime"];
+document.getElementById("demo").innerHTML = fruit;
+
+// To add an element to the beginning of array we simply use the unshift() method, with the argument or parameter of the function whatever it is that you want to add to the array...
+fruit.unshift("watermelon");
+console.log(`the original array is ${fruit}`);
+// Bring the array to the browser...
+document.getElementById("demo1").innerHTML = fruit;
+
+// The unshift() method returns the new array length, it does not return the array it self, to do so we much call the array by name....
+console.log(fruit.unshift("Limon"), "👈 the number of elements in array"); // returns 5
+console.log(`I am the updated fruit array ~ ${fruit}`);
