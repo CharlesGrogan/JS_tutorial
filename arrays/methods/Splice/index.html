@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <title>splice() method</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-3">Splice() an Array</h1>
+          <p class="lead">
+            The <strong>splice()</strong> method can be used to add new items to
+            an array.
+          </p>
+          <hr class="my-2" />
+          <p>
+            For example we have declaration like this...let fruit = ["banana",
+            "orange", "apple"];
+          </p>
+          <p>
+            We apply the splice() to the fruit array...fruits.splice(2, 0,
+            "lemon", "kiwi");
+          </p>
+          <p>
+            The first parameter (2) defines the position where the new elements
+            should be added (or spliced in).
+          </p>
+          <p>
+            The second parameter (0) defines how many elements should be removed
+          </p>
+          <p>
+            The rest of the parameters('lemon', 'kiwi') define the new elements
+            to be added
+          </p>
+          <p>
+            The <strong>splice() </strong>method returns the array with the
+            deleted items
+          </p>
+          <p>The result // <span class="results"></span></p>
+          <!-- <div class="results"></div> -->
+          <hr />
+          <p>In another example if we were to take and that same array</p>
+          <p>let fruits = ["banana", "orange", "apple"];</p>
+          <p>Lets say we did this: fruit.splice(2, 2, 'lemon', 'kiwi']; ???</p>
+          <p>hint: Remember what that second parameter is responsible for...</p>
+          <p>
+            The output is: <span class="result"></span> 'Apple' is removed from
+            the array because we said in the second parameter to delete the
+            value at position 2 and replace it with the values 'lemon', 'kiwi'
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./splice.js"></script>
+  </body>
+</html>

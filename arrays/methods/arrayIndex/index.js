@@ -21,4 +21,4 @@ simpleArr[5] = "bird";
 
 console.log(`adding to array blindly we return this array ${simpleArr}`); // return  wolf,cat,fish,,,bird
 
-// notice the ,,, well thats bc we jumped right over index 3 & index 4 => straight to index 5 with 'fish'
+// notice the `,,,` well thats bc we jumped right over index 3 & index 4 => straight to index 5 with 'fish'
